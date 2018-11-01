@@ -1,43 +1,51 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+title: Posts
+description: 
+author: Aditya
+github: https://github.com/aditya-369
+about: I am a computer science Undergrad student who is intrested in many things like programming, music, sports...and many things that makes me curious.
+avatar_url: /static/img/ad.jpg
 
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
-title: Aditya Prayaga
-email: adityaprayaga@gmail.com
-description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "www.aditya-369.ml" # the subpath of your site, e.g. /blog
-url: "www.aditya-369.ml" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: Aditya__369
-github_username:  aditya-369
+enableTags: true
+tagarray: []
 
-# Build settings
+collections:
+  project:
+    output: true
+    permalink: /project/:path/
+
+social:
+    - icon: fa-facebook
+      link: "https://www.facebook.com/aditya.sai.311"
+    - icon: fa-twitter
+      link: "https://twitter.com/Aditya__369"
+    - icon: fa-linkedin
+      link: "https://in.linkedin.com/in/aditya-prayaga-22b83a139"
+    - icon: fa-github
+      link: "https://github.com/aditya-369"
+
+share:
+  twitter_username: Aditya__369
+  fb_appid: 1749788565247320
+
+urls:
+    - text: About Me
+      url: /about/
+    - text: My Projects
+      url: /projects/
+
+url: "https://www.aditya-369.ml/"
+baseurl: ""
+paginate: 20
+per_page: 20
+paginate_path: "/page/:num/"
 markdown: kramdown
-theme: minima
-plugins:
-  - jekyll-feed
+gems:
+  - jekyll-paginate
+  - jekyll-gist
 
-# Exclude from processing.
-# The following items will not be processed, by default. Create a custom list
-# to override the default setting.
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+compress_html:
+  clippings: all
+  comments: ["<!-- ", " -->"]
+  endings: all
+  ignore:
+    envs: ['development']

@@ -1,0 +1,10 @@
+[
+	{
+		"slug": "cool-project",
+		"name": "APIHUB",
+		"image": "placeholder.jpg",
+		"url": "https://www.apihub.cf",
+		"date": "May 2018",
+		"tags": ["ruby","HTML"]
+	}
+]
